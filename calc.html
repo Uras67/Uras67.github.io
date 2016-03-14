@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+            <input type="text" id="inpu">
+            <select id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="text" id="input2">
+            <input type="button" id="calc" value="calc" onclick="caculate();">
+            <input type="text" id="output" disabled>
+            <br>
+            </form>
+            <div id="error">
+            </div>
+        </div>
+        <script>
+            var i = 1;
+            var in1 = parseInt($('input1').val());
+            var in2 = parseInt($('input2').val());
+            function calculate() {
+                if(checkinput()) {
+                    var res = eval(in1 + $('operator').val() + in2);
+                    $('#output').val(res);
+                } else {
+                    $('#error').append("You made "+ 1 +" mistakes");
+                {
+            }
+
+             function checkInput() {
+                 if(isNaN(in1) | | isNaN(in2))
+             }
+             
+             </script>
+    </body>
+</html>
