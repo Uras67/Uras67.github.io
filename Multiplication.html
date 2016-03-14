@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            function multiply(x, y) {
+                var res = (x * y) ;
+                return res;                
+            }
+            function calculate() {
+                var x = $('#numx').val(); var y = $('#numy').val();
+                var res = multiply(x, y);
+                $('#res').val(res);
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <form>
+                <input type="text" id="numx" value="" placeholder="X"/>
+                <input type="text" id="numy" value="" placeholder="Y"/>
+                <input type="button" onclick="calculate();" value="Multiply"/>
+                <input type="text" id="res" value="" placeholder="Result"/>
+            </form>
+        </div>
+    </body>
+</html>
