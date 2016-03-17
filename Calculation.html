@@ -40,7 +40,7 @@ var i = 1;
             }
 
             function checkInput1(in1,in2) {
-                if(!!isNaN(in1) && !!isNaN(in2)) { // || means OR; && means AND; ! means NOT
+                if(!(!isNaN(in1) && !isNaN(in2))) { // || means OR; && means AND; ! means NOT
                     return false;
                 }
                 return true;
