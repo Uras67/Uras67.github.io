@@ -21,8 +21,17 @@
             <ul id="numName"></ul>
             <ul id="numNumeric"></ul>
             <ul id="order"></ul>
+            <input type="text" id="it"/>
         </div>
         <script type="text/javascript">
+            var targetTime = 45;
+            $('#it').val(targetTime);
+            var at = setInterval(cbt(), 1000);
+            function cbt() {
+                var ct1 = $(it).val();
+                ct1 = 1;
+                $('#it').val(ct1);
+            }
             var numText = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn'];
             //var numText = ['null', 'eins', 'zwei'];
             var numbers = [];
